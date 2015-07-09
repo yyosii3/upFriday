@@ -1,0 +1,30 @@
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "public/bower_components/fontawesome/scss/font-awesome";
+
+/**
+ * BOOTSTRAP FIXES
+ */
+
+input, select, textarea {
+  cursor: pointer;
+}
+
+.alert {
+  > li {
+    margin-left: 10px;
+  }
+}
+
+.opacity {
+  &--half {
+    opacity: 0.4;
+    transition: 0.3s all ease-in;
+  }
+
+  &__hover {
+    &--full:hover {
+      opacity: 1;
+    }
+  }
+}
+
