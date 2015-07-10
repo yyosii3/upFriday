@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="de">
-<head>
-    <title>@yield('title')</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta charset="UTF-8" />
+    <head>
+        <title>@yield('title')</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        
+        <!-- Script Sheets -->
+        {!! HTML::script('js/jquery.js')!!}
+        {!! HTML::script('bootstrap/js/bootstrap.min.js') !!}
+ 
+        <!-- Style Sheets -->
+        {!! HTML::style('bootstrap/css/bootstrap.min.css') !!}
+        {!! HTML::style('css/app.css') !!}
+        {!! HTML::style('css/lmenu.css') !!}
 
-    <!-- Style Sheets -->
-    <link href="{{ URL::to('css') }}/app.css" rel="stylesheet" />
-    <link href="{{ URL::to('bower_components') }}/fontawesome/css/font-awesome.min.css" rel="stylesheet" />
-    <!-- Scripts -->
-    <script src="{{ URL::to('bower_components') }}/jquery/dist/jquery.min.js"></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="{{ URL::to('/') }}/favicon.ico" />
-</head>
-<body>
-    @include('partials.navigation')
+    </head>
+    <body>
 
-    <div class="container">
-        <h1>@yield('title')</h1>
-        @yield('content')
-    </div>
-
-    @yield('footer')
-</body>
+        @include('partials.navigation')
+        <div class="container-fluids">
+            @include('partials.menu')
+        </div>
+        @yield('footer')
+    </body>
 </html>

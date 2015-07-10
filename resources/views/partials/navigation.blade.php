@@ -1,8 +1,8 @@
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default">
+<!-- Fixed navbar 
+<nav style="padding-left: 250px" class="navbar navbar-default">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -12,10 +12,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <!--<li class="active"><a href="{{url('languages')}}">Languages</a></li>-->
+                <li class="active"><a href="{{url('languages')}}">Languages</a></li>
                 <li><a href="{!! url('about') !!}">About</a></li>
                 <li><a href="{!! url('contact') !!}">Contact</a></li>
-<!--                <li class="dropdown">
+                <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
@@ -26,7 +26,7 @@
                         <li><a href="#">Separated link</a></li>
                         <li><a href="#">One more separated link</a></li>
                     </ul>
-                </li>-->
+                </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if($loggedInUser)
@@ -38,6 +38,15 @@
                 @endif
 
             </ul>
-        </div><!--/.nav-collapse -->
+        </div>/.nav-collapse 
     </div>
-</nav>
+</nav>-->
+
+<div class="row" style="background: gold">
+    <div>
+        
+        
+    </div>
+</div>
+    
+</div>
